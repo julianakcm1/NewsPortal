@@ -47,7 +47,7 @@ This project was developed with the following technologies:
 
 <div id="-features">
 
-## :rocket: Features
+## ⚙️ Features
 
 - [x] .
 - [x] .
