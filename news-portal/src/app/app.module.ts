@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FeaturesFormComponent } from './pages/features-form/features-form.component';
 import { RegisterFormComponent } from './pages/register-form/register-form.component';
 import { LoginFormComponent } from './pages/login-form/login-form.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeaturesFormComponent,
     RegisterFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

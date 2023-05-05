@@ -21,6 +21,14 @@ body{
   background-color: var(--gray);
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+li a {
+  color: #fff;
+}
+
 .bg-white {
   background: #fff;
 }
@@ -31,6 +39,10 @@ body{
 
 .text-bold {
   color: var(--bold-blue)
+}
+
+.bg-semibold-blue {
+  background: var(--semibold-blue);
 }
 
 .text-blue {
