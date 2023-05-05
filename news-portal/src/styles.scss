@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --bold-blue: #000B25;
+  --semibold-blue: #001B5B;
+  --blue: #164CCD;
+  --gray: #F5F7FF;
+  --light-blue: #C4D6FC;
+  --pink: #FF6565;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--bold-blue);
+  background-color: var(--gray);
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.text-semibold-blue {
+  color: var(--semibold-blue);
+}
+
+.text-bold {
+  color: var(--bold-blue)
+}
+
+.text-blue {
+  color: var(--blue)
+}
+
+.text-white {
+  color: white
+}
+
+.btn-save {
+  width: 100%;
+  background: var(--blue);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-save:hover{
+  background: var(--semibold-blue);
+}
+
+.title {
+  font-family: 'Poppins Bold', sans-serif;
+  color: var(--semibold-blue);
+  font-weight: 700;
+}
+
+.radius {
+  border-radius: 2%;
+}
