@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { FeaturesFormComponent } from './pages/features-form/features-form.component';
 import { RegisterFormComponent } from './pages/register-form/register-form.component';
+import { LoginFormComponent } from './pages/login-form/login-form.component';
 
 const routes: Routes = [
   { path: 'features', component: FeaturesFormComponent },
-  { path: 'register', component: RegisterFormComponent}
+  { path: 'register', component: RegisterFormComponent},
+  { path: 'login', component: LoginFormComponent }
 ];
 
 @NgModule({
