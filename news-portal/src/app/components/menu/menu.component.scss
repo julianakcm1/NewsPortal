@@ -2,6 +2,25 @@
   padding: 0 3em 0 3em !important;
 }
 
+.navbar li {
+  padding: 0.3em 1em 0.3em 1em;
+}
+
+.navbar li a {
+  font-weight: 600;
+}
+
 .navbar li a:hover {
   color: var(--pink);
+}
+
+.btn-login {
+  border: 1px solid var(--pink);
+  border-radius: 2em;
+  color: var(--pink)!important;
+  font-weight: 400;
+}
+
+.btn-login:hover {
+  background: white;
 }

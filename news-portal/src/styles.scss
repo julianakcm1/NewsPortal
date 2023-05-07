@@ -45,12 +45,24 @@ li a {
   background: var(--semibold-blue);
 }
 
+.bg-blue {
+  background: var(--blue);
+}
+
+.bg-pink {
+  background: var(--pink);
+}
+
 .text-blue {
   color: var(--blue)
 }
 
 .text-white {
   color: white
+}
+
+.text-pink {
+  color: var(--pink);
 }
 
 .btn-save {

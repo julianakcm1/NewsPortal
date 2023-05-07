@@ -7,6 +7,7 @@ import { FeaturesFormComponent } from './pages/features-form/features-form.compo
 import { RegisterFormComponent } from './pages/register-form/register-form.component';
 import { LoginFormComponent } from './pages/login-form/login-form.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuComponent } from './components/menu/menu.component';
     FeaturesFormComponent,
     RegisterFormComponent,
     LoginFormComponent,
-    MenuComponent
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
