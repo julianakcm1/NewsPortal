@@ -2,3 +2,11 @@
   border-bottom: 1px solid var(--pink);
   padding: 0 0 0.9em 0;
 }
+
+.comment-form input, textarea {
+  border: 1px solid var(--blue)
+}
+
+.comment-form .btn-save {
+  width: 20%;
+}
