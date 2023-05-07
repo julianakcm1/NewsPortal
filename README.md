@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://cdn-icons-png.flaticon.com/512/4464/4464389.png" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/54086293/236684590-4afc9d0f-3edf-4395-b6f0-fbae97f3acdb.png" width="140" height="140">
 
 # NewsPortal <br>
 **Software Line Design** <br>
@@ -11,7 +11,6 @@
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tech">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-contact">Contact</a><br><br>
 </p>
 
@@ -25,9 +24,9 @@
 
 ## :computer: Project
 
-The project is a ... The concepts were used:
-
-- x
+  This project was built for the Designing Software Product Lines course at the Institute of Computing at the Federal University of Alagoas. <br>
+  The project aims to develop a software product line for news portals. <br>
+  Concepts studied in the classroom were used, such as use case diagrams, feature diagrams, component diagrams, variability diagrams, among others, and these gave support to the application.
 
 </div>
 
@@ -37,10 +36,11 @@ The project is a ... The concepts were used:
 
 This project was developed with the following technologies:
 
-- HTML  
-- CSS
+- Angular
+- Typescript
 - Git
 - Github
+- Vercel
 - Figma
 
 </div>
@@ -49,16 +49,10 @@ This project was developed with the following technologies:
 
 ## ⚙️ Features
 
-- [x] .
-- [x] .
-
-</div>
-
-<div id="-layout">
-
-## :memo: Layout
-
-To view the layout of the project, just click [here]().
+- [x] user authentication
+- [x] content management
+- [x] content display
+- [x] content customization
 
 </div>
 
