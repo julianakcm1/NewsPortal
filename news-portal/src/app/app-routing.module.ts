@@ -6,13 +6,15 @@ import { RegisterFormComponent } from './pages/register-form/register-form.compo
 import { LoginFormComponent } from './pages/login-form/login-form.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewsFormComponent } from './pages/news-form/news-form.component';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'features', component: FeaturesFormComponent },
   { path: 'register', component: RegisterFormComponent},
   { path: 'login', component: LoginFormComponent },
-  { path: 'news/create', component: NewsFormComponent }
+  { path: 'news/create', component: NewsFormComponent },
+  { path: 'news', component: NewsPageComponent}
 ];
 
 @NgModule({
