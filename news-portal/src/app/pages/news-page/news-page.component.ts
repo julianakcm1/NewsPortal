@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/api.service';
+import { ActivatedRoute, Router } from '@angular/router'
 
 @Component({
   selector: 'app-news-page',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news-page.component.scss']
 })
 export class NewsPageComponent implements OnInit {
+  news!: any
 
-  constructor() { }
+  constructor(
+    private apiService: ApiService,
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+    const id = this.route.snapshot.params['id']
+
+    this.apiService.getNewsById(id).subscribe(response => {
+      this.news = response
+    });
+
   }
 
 }

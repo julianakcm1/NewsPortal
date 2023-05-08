@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterFormComponent},
   { path: 'login', component: LoginFormComponent },
   { path: 'news/create', component: NewsFormComponent },
-  { path: 'news', component: NewsPageComponent}
+  { path: 'news/:id', component: NewsPageComponent}
 ];
 
 @NgModule({

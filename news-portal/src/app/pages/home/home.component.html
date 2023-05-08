@@ -50,40 +50,16 @@
 
 <h2 class="title d-flex justify-content-center mt-4 mb-4">Nossas últimas notícias</h2>
 
-<div class="news d-flex justify-content-center mb-3 mt-4 ">
+<div class="d-flex justify-content-center ">
+  <div class="news mb-3 mt-4"
+  *ngFor="let new of news">
   <div class="card mx-3" style="width: 18rem;">
     <img src="../../../assets/news3.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn text-pink">Go somewhere</a>
+      <h5 class="card-title title">{{ new.title }}</h5>
+      <p class="card-text">{{ new.post | slice:0:80 }}</p>
+      <a class="btn text-pink" [routerLink]="['news/', new.id]" >Ler mais</a>
     </div>
   </div>
-
-  <div class="card mx-3" style="width: 18rem;">
-    <img src="../../../assets/news4.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn text-pink">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card mx-3" style="width: 18rem;">
-    <img src="../../../assets/news1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn text-pink">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card mx-3" style="width: 18rem;">
-    <img src="../../../assets/news4.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn text-pink">Go somewhere</a>
-    </div>
-  </div>
+</div>
 </div>
