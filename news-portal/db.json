@@ -63,12 +63,14 @@
       "search_text": null,
       "search_filter": "filter",
       "id": 1
-    },
+    }
+  ],
+  "users": [
     {
-      "search": true,
-      "search_text": "text",
-      "search_filter": null,
-      "id": 2
+      "name": "giuliana castro",
+      "email": "gcda@ic.ufal.br",
+      "password": "giu123",
+      "id": 1
     }
   ]
 }

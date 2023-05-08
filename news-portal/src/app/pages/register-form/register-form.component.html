@@ -1,5 +1,5 @@
 <section class="register-form d-flex justify-content-center align-items-center" style="height: 100vh;">
-  <form class="form bg-white radius">
+  <form class="form bg-white radius" [formGroup]="formGroup">
     <h4 class="title mb-4 text-center">Cadastro de usuário</h4>
 
     <div class="text-left">
@@ -9,7 +9,7 @@
             Nome completo
             <span class="text-danger">*</span>
           </label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" formControlName="name">
         </div>
       </div>
 
@@ -19,7 +19,7 @@
             Email
             <span class="text-danger">*</span>
           </label>
-          <input type="email" class="form-control"  placeholder="exemplo@gmail.com">
+          <input type="email" class="form-control"  placeholder="exemplo@gmail.com" formControlName="email">
         </div>
       </div>
 
@@ -29,11 +29,11 @@
             Senha
             <span class="text-danger">*</span>
           </label>
-          <input type="password" class="form-control">
+          <input type="password" class="form-control" formControlName="password">
         </div>
       </div>
     </div>
 
-    <button class="btn-save mt-4 register-btn">Cadastrar</button>
+    <button class="btn-save mt-4 register-btn" (click)="onSubmit()">Cadastrar</button>
   </form>
 </section>

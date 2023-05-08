@@ -29,4 +29,8 @@ export class ApiService {
   postVariabilities(data: any) {
     return this.http.post<any>(`${this.apiUrl}/variabilities`, data)
   }
+
+  creteUser(data: any) {
+    return this.http.post<any>(`${this.apiUrl}/users`, data)
+  }
 }
