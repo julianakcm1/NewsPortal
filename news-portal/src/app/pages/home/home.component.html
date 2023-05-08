@@ -9,12 +9,12 @@
 
   <div class="row">
     <div class="col-lg-8" style="max-height: 27em;">
-      <a href="news/id">
+      <a  [routerLink]="['news/', firstRecentNews.id]">
       <div class="card text-white">
         <img class="card-img" src="../../../assets/news1.jpg"
         alt="Card image" style="height: 27em;">
         <div class="card-img-overlay d-flex align-items-end">
-          <h3 class="card-title">Foguete da Space X explode no lançamento</h3>
+          <h3 class="card-title">{{ firstRecentNews.title }}</h3>
         </div>
       </div>
       </a>
@@ -23,22 +23,22 @@
     <div class="col-lg-4">
       <div class="row">
         <div class="col-sm-6 col-lg-12 " style="max-height: 13em;">
-          <a href="news/id">
+          <a [routerLink]="['news/', secondRecentNews.id]">
             <div class="card text-white">
               <img class="card-img" src="../../../assets/news2.png" alt="Card image" style="height: 13em;">
               <div class="card-img-overlay d-flex align-items-end">
-                <h3 class="card-title">Protestos no chile</h3>
+                <h3 class="card-title">{{ secondRecentNews.title }}</h3>
               </div>
             </div>
           </a>
         </div>
 
         <div class="col-sm-6 col-lg-12 mt-3"  style="max-height: 13em;">
-          <a href="news/id">
+          <a [routerLink]="['news/', thirdRecentNews.id]">
             <div class="card text-white">
               <img class="card-img" src="../../../assets/news3.jpg" alt="Card image" style="height: 13em;">
               <div class="card-img-overlay d-flex align-items-end">
-                <h3 class="card-title">MET Gala: Como assistir</h3>
+                <h3 class="card-title">{{ thirdRecentNews.title }}</h3>
               </div>
             </div>
           </a>
@@ -48,7 +48,7 @@
   </div>
 </section>
 
-<h2 class="title d-flex justify-content-center mt-4 mb-4">Nossas últimas notícias</h2>
+<h2 class="title d-flex justify-content-center mt-4 mb-4">Acompanhe nossas notícias</h2>
 
 <div class="d-flex justify-content-center ">
   <div class="news mb-3 mt-4"
