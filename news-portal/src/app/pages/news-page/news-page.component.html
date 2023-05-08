@@ -2,10 +2,10 @@
 <section class="w-70 mt-4 mb-4">
   <div class="d-flex justify-content-center">
     <div class="flex-column w-50">
-      <h1 class="title">{{ news.title }}</h1>
-      <p class="text-pink">Escrito por: {{ news.author }} </p>
+      <h1 class="title">{{ news?.title }}</h1>
+      <p class="text-pink">Escrito por: {{ news?.author }} </p>
       <img src="../../../assets/news3.jpg" class="mb-4" style="max-width: 100%;">
-      <p> {{ news.post }} </p>
+      <p> {{ news?.post }} </p>
     </div>
   </div>
 </section>
@@ -13,27 +13,25 @@
 <div class="comments d-flex justify-content-center mb-4">
   <div class="flex-column w-50">
     <h3 class="title">Comentários</h3>
-    <h4 class="text-pink mt-3 mb-3">Não há comentários ainda :(</h4>
-    <div class="comment d-flex mt-4 mb-4">
-      <img src="../../../assets/avatar.png" style="width: 10%;" class="rounded-circle">
-      <div class="mx-4">
-        <h5 class="text-pink">Matheus Levi</h5>
-        <p>Eu amei, que post perfeito!!</p>
+    <h4 class="text-pink mt-3 mb-3" *ngIf="comments.length == 0">Não há comentários ainda :(</h4>
+
+    <div *ngFor="let comment of comments">
+
+      <div class="comment d-flex mt-4 mb-4">
+        <img src="../../../assets/avatar.png" style="width: 10%;" class="rounded-circle">
+        <div class="mx-4">
+          <h5 class="text-pink">{{ comment?.author }}</h5>
+          <p>{{ comment.comment }}</p>
+        </div>
       </div>
     </div>
 
-    <div class="comment d-flex mt-4 mb-4">
-      <img src="../../../assets/avatar.png" style="width: 10%;" class="rounded-circle">
-      <div class="mx-4">
-        <h5 class="text-pink">Matheus Levi</h5>
-        <p>lindo <3</p>
-      </div>
-    </div>
-
-    <form class="comment-form flex-column d-flex">
-      <input type="text" placeholder="Nome" class="w-50 mb-3 p-2">
-      <textarea class="mb-3 p-2" placeholder="Escreva seu comentário"></textarea>
-      <button class="btn-save p-2">Publicar</button>
+    <form class="comment-form flex-column d-flex" [formGroup]="formGroup">
+      <input type="text" placeholder="Nome" class="w-50 mb-3 p-2" formControlName="name">
+      <textarea class="mb-3 p-2" placeholder="Escreva seu comentário" formControlName="comment"></textarea>
+      <button class="btn-save p-2"
+      (click)="onComment()"
+      >Publicar</button>
     </form>
   </div>
 </div>

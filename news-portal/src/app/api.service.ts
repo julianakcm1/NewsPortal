@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+import { Comment } from './interfaces/news-portal.interface';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,11 +11,18 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getNews(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/news`);
+    return this.http.get<any>(`${this.apiUrl}/news`)
   }
 
   getNewsById(id: number): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/news/${id}`);
+    return this.http.get<any>(`${this.apiUrl}/news/${id}`)
   }
 
+  getComments(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/comments`)
+  }
+
+  postComment(comment: Comment) {
+    return this.http.post<any>(`${this.apiUrl}/comments`, comment)
+  }
 }
