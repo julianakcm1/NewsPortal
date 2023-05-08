@@ -10,8 +10,8 @@ import { RegisterFormComponent } from './pages/register-form/register-form.compo
 import { LoginFormComponent } from './pages/login-form/login-form.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NewsFormComponent } from './pages/news-form/news-form.component';
 import { NewsPageComponent } from './pages/news-page/news-page.component';
+import { CreateNewsComponent } from './pages/create-news/create-news.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +21,8 @@ import { NewsPageComponent } from './pages/news-page/news-page.component';
     LoginFormComponent,
     MenuComponent,
     HomeComponent,
-    NewsFormComponent,
-    NewsPageComponent
+    NewsPageComponent,
+    CreateNewsComponent
   ],
   imports: [
     BrowserModule,

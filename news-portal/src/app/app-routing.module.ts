@@ -5,15 +5,15 @@ import { FeaturesFormComponent } from './pages/features-form/features-form.compo
 import { RegisterFormComponent } from './pages/register-form/register-form.component';
 import { LoginFormComponent } from './pages/login-form/login-form.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NewsFormComponent } from './pages/news-form/news-form.component';
 import { NewsPageComponent } from './pages/news-page/news-page.component';
+import { CreateNewsComponent } from './pages/create-news/create-news.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'features', component: FeaturesFormComponent },
   { path: 'register', component: RegisterFormComponent},
   { path: 'login', component: LoginFormComponent },
-  { path: 'news/create', component: NewsFormComponent },
+  { path: 'news/create', component: CreateNewsComponent },
   { path: 'news/:id', component: NewsPageComponent}
 ];
 

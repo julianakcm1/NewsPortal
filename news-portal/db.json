@@ -23,6 +23,27 @@
       "title": "Charles II é coroado rei",
       "author": "Julia Rodriguez",
       "post": "Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    },
+    {
+      "title": "teste de noticia",
+      "image": "C:\\fakepath\\gato.png",
+      "post": "teste de noticia espero que dê certo",
+      "author": "giuliana",
+      "id": 5
+    },
+    {
+      "title": "Teste de noticia 23",
+      "image": "C:\\fakepath\\gato2.jpg",
+      "post": "ddd",
+      "author": "giu",
+      "id": 6
+    },
+    {
+      "title": "yyyy",
+      "image": "C:\\fakepath\\news4.jpeg",
+      "post": "lç~lç",
+      "author": "çç",
+      "id": 7
     }
   ],
   "comments": [
@@ -54,6 +75,18 @@
       "id": 64,
       "newsId": "1",
       "author": "dd",
+      "comment": "dd"
+    },
+    {
+      "id": 52,
+      "newsId": "5",
+      "author": "giuliana",
+      "comment": "oioioi"
+    },
+    {
+      "id": 74,
+      "newsId": "5",
+      "author": "teste user",
       "comment": "dd"
     }
   ],
