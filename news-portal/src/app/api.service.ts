@@ -25,4 +25,8 @@ export class ApiService {
   postComment(comment: Comment) {
     return this.http.post<any>(`${this.apiUrl}/comments`, comment)
   }
+
+  postVariabilities(data: any) {
+    return this.http.post<any>(`${this.apiUrl}/variabilities`, data)
+  }
 }

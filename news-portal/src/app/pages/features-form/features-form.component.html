@@ -1,48 +1,28 @@
 <section class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-  <form class="form bg-white radius">
-    <h4 class="title mb-4">Selecione as features que você deseja</h4>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" controlName="comentario">
-      <label class="form-check-label text-semibold-blue" for="flexCheckDefault">
-        Comentários
-      </label>
-
-      <div class="form-check mt-2">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Somente membros
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-        <label class="form-check-label" for="flexRadioDefault2">
-          Todos podem comentar
-        </label>
-      </div>
-
-    </div>
+  <form class="form bg-white radius" [formGroup]="formGroup">
+    <h4 class="title mb-4">Seleção de variabilidade</h4>
 
     <div class="form-check mt-4">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label text-semibold-blue" for="flexCheckDefault">
+      <input class="form-check-input" type="checkbox" (change)="checkComments($event)" formControlName="search">
+      <label class="form-check-label text-semibold-blue">
         Busca
       </label>
 
       <div class="form-check mt-2">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
+        <input class="form-check-input" type="radio" value="text" formControlName="search_text" (change)="onSearchTextSelect()">
+        <label class="form-check-label">
           Por texto
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <input class="form-check-input" value="filter" type="radio" id="flexRadioDefault2" formControlName="search_filter" (change)="onSearchFilterSelect()">
         <label class="form-check-label" for="flexRadioDefault2">
-          Por filtro
+          Por seleção
         </label>
       </div>
+
     </div>
 
-    <button class="btn-save py-2 mt-4">Salvar e continuar</button>
+    <button class="btn-save py-2 mt-4" (click)="onSubmit()">Salvar e continuar</button>
   </form>
 </section>

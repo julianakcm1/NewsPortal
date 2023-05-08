@@ -56,5 +56,19 @@
       "author": "dd",
       "comment": "dd"
     }
+  ],
+  "variabilities": [
+    {
+      "search": true,
+      "search_text": null,
+      "search_filter": "filter",
+      "id": 1
+    },
+    {
+      "search": true,
+      "search_text": "text",
+      "search_filter": null,
+      "id": 2
+    }
   ]
 }
